@@ -35,7 +35,7 @@
 
   <script src="/hexo-theme-freemind/js/jquery-2.0.3.min.js"></script>
   
-    <script src="/hexo-theme-freemind/js/comment.min.js"></script> 
+    <script src="/hexo-theme-freemind/js/comment.js"></script> 
     <script src="/hexo-theme-freemind/js/markdown.min.js"></script>
     <script src="/hexo-theme-freemind/js/timeago.min.js"></script>
 	<script src="/hexo-theme-freemind/js/spin.min.js"></script>
@@ -195,19 +195,19 @@
 	 <div id="loading-spin"></div>
 	 <script type="text/javascript">
 	   getComments({
-		   type: "github",
-	           user: "wzpan",
-	           repo: "hexo-theme-freemind-blog",
+           type: "github" ? "github" : "github",       
+	       user: "wzpan",
+	       repo: "hexo-theme-freemind-blog",
 		   client_id: "bf7d4ba11877db88543e",
-                   client_secret: "bff8a6b06b745c0bfcdccbe225623ea8e2a057bb",
+           client_secret: "bff8a6b06b745c0bfcdccbe225623ea8e2a057bb",
 		   no_comment: "No comments yet. Press the button and go to comment now!",
 		   go_to_comment: "Go to comment",
 		   no_issue: "no_issue",
 		   issue_title: "Questions and Answers",
 		   issue_id: "undefined",
-		   btn_class: "btn btn-large btn-primary" ? "btn btn-large btn-primary" : "btn",
-		   comments_target: "#comment-thread" ? "#comment-thread" : "#comment-thread",
-		   loading_target: "#loading-spin"
+		   btn_class: "btn btn-primary",
+		   comments_target: "#comment-thread",
+		   loading_target: "#loading_spin"
 		   });
 	 </script>
   

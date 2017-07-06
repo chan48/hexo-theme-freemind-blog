@@ -33,7 +33,7 @@
 
   <script src="/hexo-theme-freemind/js/jquery-2.0.3.min.js"></script>
   
-    <script src="/hexo-theme-freemind/js/comment.min.js"></script> 
+    <script src="/hexo-theme-freemind/js/comment.js"></script> 
     <script src="/hexo-theme-freemind/js/markdown.min.js"></script>
     <script src="/hexo-theme-freemind/js/timeago.min.js"></script>
 	<script src="/hexo-theme-freemind/js/spin.min.js"></script>
@@ -191,13 +191,13 @@
 		<div id="recent-comments"></div>		
 		<script type="text/javascript">
 		    getRecentCommentsList({
-			   type: "github",
+			   type: "github" ? "github" : "github",
 			   user: "wzpan",
-                           repo: "hexo-theme-freemind-blog",
-                           client_id: "bf7d4ba11877db88543e",
-                           client_secret: "bff8a6b06b745c0bfcdccbe225623ea8e2a057bb",
+               repo: "hexo-theme-freemind-blog",
+               client_id: "bf7d4ba11877db88543e",
+               client_secret: "bff8a6b06b745c0bfcdccbe225623ea8e2a057bb",
 			   count: "5" ? "5" : 5,
-			   recent_comments_target: "#recent-comments" ? "#recent-comments" : "#recent-comments"
+			   recent_comments_target: "#recent-comments"
 			});
 		</script>
 	
@@ -224,19 +224,19 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/hexo-theme-freemind/tags/Q-A/">Q&amp;A<span>2</span></a></li>
-		
-			<li><a href="/hexo-theme-freemind/tags/简体/">简体<span>1</span></a></li>
-		
-			<li><a href="/hexo-theme-freemind/tags/highlight/">highlight<span>1</span></a></li>
+			<li><a href="/hexo-theme-freemind/tags/English/">English<span>1</span></a></li>
 		
 			<li><a href="/hexo-theme-freemind/tags/繁體/">繁體<span>1</span></a></li>
 		
-			<li><a href="/hexo-theme-freemind/tags/plugins/">plugins<span>2</span></a></li>
-		
 			<li><a href="/hexo-theme-freemind/tags/themes/">themes<span>1</span></a></li>
 		
-			<li><a href="/hexo-theme-freemind/tags/English/">English<span>1</span></a></li>
+			<li><a href="/hexo-theme-freemind/tags/Q-A/">Q&amp;A<span>2</span></a></li>
+		
+			<li><a href="/hexo-theme-freemind/tags/highlight/">highlight<span>1</span></a></li>
+		
+			<li><a href="/hexo-theme-freemind/tags/plugins/">plugins<span>2</span></a></li>
+		
+			<li><a href="/hexo-theme-freemind/tags/简体/">简体<span>1</span></a></li>
 		
 		 
 		</ul>
