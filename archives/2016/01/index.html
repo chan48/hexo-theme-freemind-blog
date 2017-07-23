@@ -276,17 +276,17 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/hexo-theme-freemind-blog/tags/plugins/">plugins<span>2</span></a></li>
-		
 			<li><a href="/hexo-theme-freemind-blog/tags/English/">English<span>1</span></a></li>
-		
-			<li><a href="/hexo-theme-freemind-blog/tags/themes/">themes<span>1</span></a></li>
 		
 			<li><a href="/hexo-theme-freemind-blog/tags/繁體/">繁體<span>1</span></a></li>
 		
-			<li><a href="/hexo-theme-freemind-blog/tags/highlight/">highlight<span>1</span></a></li>
+			<li><a href="/hexo-theme-freemind-blog/tags/plugins/">plugins<span>2</span></a></li>
 		
 			<li><a href="/hexo-theme-freemind-blog/tags/简体/">简体<span>1</span></a></li>
+		
+			<li><a href="/hexo-theme-freemind-blog/tags/themes/">themes<span>1</span></a></li>
+		
+			<li><a href="/hexo-theme-freemind-blog/tags/highlight/">highlight<span>1</span></a></li>
 		
 			<li><a href="/hexo-theme-freemind-blog/tags/Q-A/">Q&amp;A<span>2</span></a></li>
 		
@@ -389,6 +389,26 @@
 	 var path = "/hexo-theme-freemind-blog/" + search_path;
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
+
+
+<!-- syntax highlighting -->
+
+  <script>
+  marked.setOptions({
+    highlight: function (code, lang) {
+        return hljs.highlightAuto(code).value;
+    }
+  });
+  function Highlighting(){
+    var markdowns = document.getElementsByClassName('markdown');
+    for(var i=0;i<markdowns.length;i++){
+        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
+    }
+  }
+  window.addEventListener('DOMContentLoaded', Highlighting, false);
+  window.addEventListener('load', Highlighting, false);
+  </script>
+
 
 </body>
    </html>
